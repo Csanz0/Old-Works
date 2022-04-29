@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Border Box</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Border Radius Box</h1>
+    </header>
+    <main>
+      <div class="container">
+        <div class="subcontainer">
+          <label id="b-t-l">0</label>
+          <input
+            type="range"
+            id="border-top-left"
+            min="0"
+            max="300"
+            step="1"
+            value="0"
+          />
+        </div>
+        <div class="subcontainer">
+          <label id="b-t-r">0</label>
+          <input
+            type="range"
+            id="border-top-rigth"
+            min="0"
+            max="300"
+            step="1"
+            value="0"
+          />
+        </div>
+        <div class="subcontainer">
+          <label id="b-b-r">0</label>
+          <input
+            type="range"
+            id="border-bottom-right"
+            min="0"
+            max="300"
+            step="1"
+            value="0"
+          />
+        </div>
+        <div class="subcontainer">
+          <label id="b-b-l">0</label>
+          <input
+            type="range"
+            id="border-bottom-left"
+            min="0"
+            max="300"
+            step="1"
+            value="0"
+          />
+        </div>
+        <div class="container-btn">
+          <input type="text" id="show" readonly />
+          <button id="btnCopy">Copy</button>
+        </div>
+        <div class="container-btn">
+          <button id="btn">Reset</button>
+        </div>
+      </div>
+      <div class="container">
+        <div id="box" class="box"></div>
+      </div>
+    </main>
+    <footer>
+      <p>Realizado por:</p>
+      <p>Csanz0</p>
+    </footer>
+    <script src="./javascript/main.js" type="module"></script>
+  </body>
+</html>

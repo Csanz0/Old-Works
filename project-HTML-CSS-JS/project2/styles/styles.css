@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: serif;
+}
+body {
+  width: 100%;
+  background: rgba(34, 41, 42, 0.861);
+  color: #111;
+  position: relative;
+  overflow-x: hidden;
+}
+header {
+  width: 100%;
+  padding: 0.5em;
+  font-size: 1.4rem;
+  background: rgba(255, 255, 255, 0.733);
+  display: flex;
+}
+h1 {
+  flex: 1 1 auto;
+}
+/* container styles */
+main {
+  padding: 0.5em;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+.container {
+  width: 50%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  background: rgba(110, 105, 105, 0.438);
+  align-items: center;
+  backdrop-filter: saturate(180%) blur(20px);
+  border-radius: 0.5em;
+}
+.subcontainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 0.5em;
+}
+.subcontainer input {
+  width: 15em;
+}
+.subcontainer label {
+  font-size: 1.2rem;
+  margin-right: 0.5em;
+}
+.container-btn {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.container-btn button {
+  border: none;
+  margin: 0.7em 0.5em;
+  border-radius: 5px;
+  flex: 1 1 auto;
+  background: rgba(0, 0, 0, 0.513);
+  color: #f1f1f1;
+  font-size: 1.2rem;
+  transition: 0.5s ease all;
+}
+.container-btn button:hover {
+  background: rgba(100, 98, 98, 0.705);
+}
+.container-btn input {
+  font-size: 1.2rem;
+  padding: 0.5em;
+  width: 100%;
+  margin: 0.5em;
+  border-radius: 5px;
+  border: none;
+  background: rgba(204, 204, 204, 0.555);
+
+  flex: 1 1 auto;
+}
+/* box styles */
+.container:nth-child(2) {
+  width: 40%;
+  margin-left: 1em;
+  padding: 0.5em;
+}
+.box {
+  background: rgb(255, 253, 253);
+  width: 80%;
+  height: auto;
+  flex: 1 1 auto;
+}
+footer {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  color: #fff;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-evenly;
+}
